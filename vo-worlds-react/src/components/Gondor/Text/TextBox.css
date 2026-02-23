@@ -1,0 +1,91 @@
+.container1 {
+      width: 80%; /* Adjust as needed */
+      margin: 0 auto; /* Center the container */
+      padding: 20px;
+      box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .title-section {
+      height: 4rem; /* Adjust the height as needed */
+      text-align: center;
+      position: relative;
+    }
+
+    .titl {
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0; /* Remove default heading margins */
+      font-family: play;
+      font-size: 1.1rem;
+      position: relative;
+    }
+
+    .horizontal-line {
+      border: none;
+      height: 1px;
+      background-color: white;
+    }
+
+    .content-section p {
+      margin-bottom: 1em;
+    }
+
+    .image-text-container {
+      display: flex;
+      align-items: flex-start; /* Align items to the top */
+      gap: 20px; /* Space between text and image */
+    }
+
+    .text-column {
+      flex: 2; /* Take up 2/3 of the space */
+      text-align: justify;
+    }
+
+    .image-column {
+      flex: 1; /* Take up 1/3 of the space */
+      text-align: right; /* Align image to the right */
+    }
+
+    .image-column img {
+      max-width: 100%; /* Image should not exceed its container */
+      height: auto;
+      border-radius: 5px; /* Optional: round the corners */
+    }
+
+    .para{
+      font-family: futura;
+    }
+
+    .meme2{
+      width:60%;
+      left: 50%;
+      transform: translate(-50%);
+      margin-bottom:15px;
+    }
+    .meme3{
+      width:100%;
+    }
+
+    .pics-title{
+      font-style: italic;
+      text-align: center;
+    }
+
+    .pics-title2{
+      text-align: center;
+    }
+
+    .sa {
+      font-size: 0.9rem;
+      color: white;
+      font-family: Tahoma;
+      letter-spacing: normal;
+      font-weight: normal;
+    }
+
+    .sa:hover {
+      font-size: 0.9rem;
+      color: white;
+      font-family: Tahoma;
+    }

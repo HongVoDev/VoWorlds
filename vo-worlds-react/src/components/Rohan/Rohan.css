@@ -1,0 +1,179 @@
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block; /* Important: Removes default bottom margin */
+  }
+  
+  .app-container {
+  width: 100%;
+  height: 100vh; /* Full viewport height, adjust as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .babylon-canvas {
+  width: 100%;
+  height: 100%;
+  display: block; /* Removes extra space below canvas */
+  position: fixed; /* Keep canvas fixed while scrolling */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure canvas is behind text boxes */
+  }
+  
+  .text-box {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Ensure text boxes are on top */
+  width: 270px; /* Adjust as needed */
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  }
+  
+  .linkg {
+  -webkit-text-stroke: 1px silver;    
+  padding-top: 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+  .top-left {
+  top: 20px;
+  left: 20px;
+  }
+
+  .col-button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+.info-header {
+    text-align: center;
+    font-family: "old";
+    font-size: 1.8rem;
+    padding-bottom: 0.5rem;
+}
+
+@font-face {
+	font-family: 'old';
+	src: url("../../../public/fonts/Old.otf");
+}
+
+.overlay {
+position: fixed; /* Positioned relative to the button */
+top: 0;
+left: 0;
+width: 100%; /* or fixed width e.g., 200px */
+height: 90%; /* or fixed height e.g., 150px */
+background-color: rgba(255, 255, 255, 0.5); /* Opaque overlay */
+z-index: 1; /* Ensure it's above the button content */
+pointer-events: none; /* Allow interaction with elements behind */
+visibility: hidden; /* Initially hidden */
+opacity: 0; /* Initially transparent */
+transition: visibility 0s, opacity 0.3s linear; /* Smooth transition */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+button:hover .overlay {
+visibility: visible; /* Visible on hover */
+opacity: 1; /* Fully opaque on hover */
+}
+
+button:active .overlay {
+visibility: visible; /* Visible on hover */
+opacity: 1; /* Fully opaque on hover */
+}
+
+.buttonContainerStyle {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-around;
+padding: 10px;
+z-index: 10;
+background-color: transparent;
+}
+
+.overlay img {
+position: fixed;
+top: auto;
+left: auto;
+width: 80%;
+height: auto;
+}
+
+.outerDiv{
+  position: relative;
+  width: 90%;
+}
+
+.img4 {
+  width: 30% !important;
+}
+
+.img3 {
+  width: 60% !important;
+}
+
+	@media screen and (max-width: 900px) {
+    .img4 {
+  width: 65% !important;
+    }
+  }
+
+.content-skills {
+    position: absolute;
+    font-size: 12px;
+    padding:0;
+    bottom: 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      background: #000000;
+      border-radius: 2px;
+      display: inline-block;
+      padding: 2px 10px;
+      color: rgba(255,255,255,0.7);
+      margin: 3px 2px;
+      text-align: center;
+      flex-grow: 1;
+    }
+  }
+
+.pro-text{
+  position: absolute;
+  color: #000000;
+}
+
+.load {
+  font-style: normal;
+  font-family: play;
+  font-size: 0.9rem;
+}
+
+
+@font-face {
+	font-family: 'play';
+	src: url("../../../public/fonts/Play.ttf");
+}
+
+.img8{
+  width: 50%;
+}
+
+a{
+  font-size: 1.3rem;
+  color: rgb(97, 91, 83);
+}
+a:hover {
+    font-size: 1.3rem;
+  color: rgb(97, 91, 83);
+}
