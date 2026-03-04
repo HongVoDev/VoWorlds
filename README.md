@@ -8,5 +8,5 @@ Design diagram:
 
 
 (Bonus: my original rough draft)
-<img src="https://github.com/HongVoDev/VoWorlds/blob/f6f23866529c588582b84d321e0c09f4f87e6382/thoughts-process.png" width="50%">
+<img src="https://github.com/HongVoDev/VoWorlds/blob/f6f23866529c588582b84d321e0c09f4f87e6382/thoughts-process.png" width="60%">
 
